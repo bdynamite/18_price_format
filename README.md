@@ -1,6 +1,33 @@
 # Price Formatter
 
-[TODO. There will be project description]
+# How to Install
+
+Python 3 should be already installed. Then use pip (or pip3 if there is a conflict with old Python 2 setup)
+
+# Quick Start
+
+Example of script launch on Windows, Python 3.6:
+
+You can run it in command line
+
+```#!bash
+
+$ python downloader.py 568
+
+# output example
+
+568.00
+```
+
+Or add to your programm
+
+```#!bash
+
+from format_price import format_price
+
+price = format_price(price)
+
+```
 
 # Project Goals
 
