@@ -27,4 +27,3 @@ def format_price(price):
 if __name__ == '__main__':
     price = get_price().price
     price = format_price(price)
-    print(price)
