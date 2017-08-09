@@ -6,9 +6,10 @@ Python 3 should be already installed. Then use pip (or pip3 if there is a confli
 
 # Quick Start
 
-Example of script launch on Windows, Python 3.6:
+Example of script launch on Windows, Python 3.5:
 
 You can run it in command line
+usage: format_price.py [-h] price
 
 ```#!bash
 

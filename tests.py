@@ -6,24 +6,19 @@ from format_price import format_price
 class TestCase(unittest.TestCase):
 
     def test_1(self):
-        price = format_price('fwf223')
-        self.assertEqual(price, None)
+        self.assertRaises(ValueError, format_price, 'fwf223')
         
     def test_2(self):
-        price = format_price(list(range(5)))
-        self.assertEqual(price, None)
+        self.assertRaises(ValueError, format_price, range(5))
 
     def test_3(self):
-        price = format_price(-453.54)
-        self.assertEqual(price, None)
+        self.assertRaises(ValueError, format_price, -453.54)
 
     def test_4(self):
-        price = format_price(-0.0000242)
-        self.assertEqual(price, None)
+        self.assertRaises(ValueError, format_price, -0.0000242)
 
     def test_5(self):
-        price = format_price(0.00005242)
-        self.assertEqual(price, None)
+        self.assertRaises(ValueError, format_price, 0.00005242)
 
     def test_6(self):
         price = format_price(0.009673672)
